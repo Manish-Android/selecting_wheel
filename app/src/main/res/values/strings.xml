@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CstomSpinner</string>
+
+    <string name="selected_item">Selected item:</string>
+    <string-array name="Languages">
+        <item>English</item>
+
+        <item>Dutch</item>
+
+        <item>German</item>
+
+        <item>French</item>
+    </string-array>
+</resources>

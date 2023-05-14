@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/outerboder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outerboder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/greenwheel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/real_arrow"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/greenwheel1"-->
+<!--        app:layout_constraintStart_toStartOf="@id/greenwheel1"-->
+<!--        app:layout_constraintTop_toTopOf="@id/greenwheel1"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/greenwheel1"/>-->
+
+    <TextView
+        android:id="@+id/tv_contaner"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:drawableTop="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="@id/greenwheel1"
+        app:layout_constraintStart_toStartOf="@id/greenwheel1"
+        app:layout_constraintTop_toTopOf="@id/greenwheel1"
+        app:layout_constraintBottom_toBottomOf="@id/greenwheel1"/>
+
+
+    <ImageView
+        android:id="@+id/greenwheel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/centarpart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/greenwheel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:gravity="top|center"
+        android:text="crop"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/greenwheel1"
+        app:layout_constraintEnd_toEndOf="@+id/greenwheel1"
+        app:layout_constraintStart_toStartOf="@+id/greenwheel1"
+        app:layout_constraintTop_toTopOf="@+id/outerboder" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="vegetables"
+        android:gravity="top|center"
+        android:textStyle="bold"
+        android:rotation="45"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="@id/outerboder"
+        app:layout_constraintTop_toTopOf="@+id/outerboder"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="52dp"
+        android:textStyle="bold"
+        android:layout_height="80dp"
+        android:paddingTop="20dp"
+        android:gravity="center|top"
+        android:textSize="16sp"
+        android:rotation="90"
+        android:text="Carbon"
+        app:layout_constraintBottom_toBottomOf="@id/greenwheel1"
+        app:layout_constraintEnd_toEndOf="@id/outerboder"
+        app:layout_constraintStart_toEndOf="@+id/greenwheel1"
+        app:layout_constraintTop_toTopOf="@+id/greenwheel1" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="Cover Crop"
+       android:rotation="127"
+        android:textStyle="bold"
+        android:gravity="center|top"
+        android:textSize="16sp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintEnd_toEndOf="@id/outerboder"
+        app:layout_constraintBottom_toBottomOf="@+id/outerboder"
+       />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Others"
+        android:textStyle="bold"
+        android:gravity="center|bottom"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/greenwheel1"
+        app:layout_constraintEnd_toEndOf="@+id/greenwheel1"
+        app:layout_constraintBottom_toBottomOf="@id/outerboder"
+        app:layout_constraintTop_toBottomOf="@+id/greenwheel1"  />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Flowers"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:rotation="45"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@+id/outerboder"
+        app:layout_constraintBottom_toBottomOf="@+id/outerboder"
+        />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:text="Fruits"
+        android:textStyle="bold"
+        android:gravity="center|bottom"
+        android:paddingBottom="20dp"
+        android:rotation="90"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/greenwheel1"
+        app:layout_constraintEnd_toStartOf="@+id/greenwheel1"
+        app:layout_constraintStart_toStartOf="@+id/outerboder"
+        app:layout_constraintTop_toTopOf="@+id/greenwheel1" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Herbs"
+        android:textStyle="bold"
+        android:gravity="center|top"
+        android:rotation="315"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@+id/outerboder"
+        app:layout_constraintTop_toTopOf="@+id/outerboder" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
